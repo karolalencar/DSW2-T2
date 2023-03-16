@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #F7F7FA;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 60%;
+}
+
+.home,
+.clients,
+.charges {
+    text-decoration: none;
+    color: #23273C;
+    font-size: 14px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.home:hover,
+.clients:hover, 
+.charges:hover {
+    color: #41DC65;
+    transition: 0.35s;
+}
