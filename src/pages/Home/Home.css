@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Montserrat:wght@700&family=Nunito:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 38px;
+    text-align: center;
+    padding-top: 30px;
+    color: rgba(35, 39, 60, 1);
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap:2rem;
+}
+
+@media (min-width: 601px) {
+    .home-clients-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home-clients{
+        width: 100%;
+    }
+
+    .clients-table {
+        width: 40%;
+    }
+
+    .home-charges {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+}
+
+@media (min-width: 1000px){
+    .home-clients{
+        width: 100%;
+    }
+
+    .tables-charges{
+        display: flex;
+    }  
+}

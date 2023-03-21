@@ -1,23 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Montserrat:wght@700&family=Nunito:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.card {
-    display: flex;
-    width: 100px;
-    height: 50px;
+.paid p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+.paid-title {
+    text-align: center;
+}
+
+.paid-value {
+    white-space: nowrap;
+
+}
+
+.paid .card-img {
+    width:50px;
 }
 
 .blue {
-    background-color: #3EC3D5;
+    background-color: rgba(63, 195, 213, 0.16);
 }
 
 .gray {
-    background-color: #C8C7CD;
+    background-color: rgba(199, 198, 205, 0.16);
 }
 
 .red {
-    background-color: #FF5460;
+    background-color: rgba(255, 82, 93, 0.16);
 }
