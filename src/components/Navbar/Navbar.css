@@ -8,27 +8,30 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 24px 30px;
+    padding: 20px 26px;
     background-color: #F7F7FA;
 }
 
 .buttons-navbar {
     display: flex;
     justify-content: space-between;
-    width: 80%;    
 }
 
 .buttons-navbar > img {
     margin: auto 20px;
 }
 
-.navbar .profile-button p, .menu .profile-button img{
+.button-see-more, .home, .clients, .charges:hover {
+    cursor: pointer;
+}
+
+.navbar .profile-button p, .navbar .profile-button img{
     display: none;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav-links {
@@ -43,7 +46,7 @@
     text-decoration: none;
     color: #23273C;
     font-size: 14px;
-    padding: 0 30px;
+    padding: 0 16px;
     cursor: pointer;
 }
 
@@ -52,6 +55,23 @@
 .charges:hover {
     color: #41DC65;
     transition: 0.35s;
+}
+
+.home img {
+    filter: #41DC65;filter: invert(70%) sepia(93%) saturate(378%) hue-rotate(72deg) brightness(91%) contrast(88%);
+}
+
+.home img,
+.clients img,
+.charges img {
+    width: 30px;
+    height: 30px;
+}
+
+.home p,
+.clients p,
+.charges p {
+    font-size: 10px;
 }
 
 .dropbtn{
@@ -69,6 +89,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
+
 }
 
 .dropdown-content {
@@ -101,4 +122,38 @@
     color: #000;
 }
 
+
+@media (min-width: 601px) {
+    .navbar {
+        padding: 24px 30px;
+    }
+
+    .home {
+        margin-left: 30px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .home,
+    .clients,
+    .charges {
+        padding: 0 20px;
+    }
+
+    .home img,
+    .clients img,
+    .charges img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home p,
+    .clients p,
+    .charges p {
+        font-size: 14px;
+    }    
+}
 

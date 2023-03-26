@@ -6,7 +6,19 @@
     box-sizing: border-box;
 }
 
-.paid p {
+.card {
+    border-radius: 10px;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 40px;
+    gap: 10px;
+}
+
+.card p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -14,17 +26,17 @@
     line-height: 130%;
 }
 
+
 .paid-title {
     text-align: center;
 }
 
 .paid-value {
     white-space: nowrap;
-
 }
 
-.paid .card-img {
-    width:50px;
+.card-img {
+    width: 50px;
 }
 
 .blue {
@@ -37,4 +49,19 @@
 
 .red {
     background-color: rgba(255, 82, 93, 0.16);
+}
+
+@media (min-width: 601px) {
+    .card {
+        width: 25%;
+        height: 13rem;
+        padding: 0px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card .card-img {
+        padding-top: 10px;
+        width: 2.5rem;
+    }
 }

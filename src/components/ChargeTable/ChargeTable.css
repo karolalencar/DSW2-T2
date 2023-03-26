@@ -1,0 +1,84 @@
+table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+caption p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    border-bottom: 1pt solid rgba(239, 240, 246, 1);
+}
+
+thead {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 0.005em;
+    color: #3F3F55;
+}
+
+tr {
+    border-bottom: 1pt solid rgba(239, 240, 246, 1);
+}
+
+td {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+    color: #6E6E85;
+    text-align: center;
+}
+
+tfoot {
+    box-shadow: 0px 4px 4px rgba(172, 217, 197, 0.25);
+    border-radius: 8px;
+    text-align: center;
+    height: 3rem;
+
+}
+
+tfoot td {
+    color: #FF5460;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-decoration-line: underline;
+}
+
+.title-table .value {
+    width: 52px;
+    height: 20px;
+    border-radius: 8px;
+    margin: 1rem; 
+}
+
+@media (min-width: 601px) {
+    caption {
+        font-size: 1.5rem;
+        width: auto;
+    }
+
+    .title-table {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px){
+    .charge-table {
+        width: auto;
+        margin: auto;
+    }  
+}
